@@ -8,7 +8,7 @@ api_id = 2394927
 api_hash = '4ab4c48f456d11a2aef03310c88c0b81'
 sesi_file = 'pemuda'
 
-Casino = '/masak_MiniBacon_160'
+Casino = '/masak_MiniBacon_220'
 
     
 with TelegramClient(sesi_file, api_id, api_hash) as client:
@@ -18,7 +18,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
     async def handler(event):
         if 'Berhasil memasak' in event.raw_text:
             time.sleep(2)
-            await event.respond('/masak_MiniBacon_160')
+            await event.respond('/masak_MiniBacon_220')
             return
         
     client.start() 
